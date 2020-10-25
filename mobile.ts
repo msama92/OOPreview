@@ -1,13 +1,13 @@
 export class Mobile 
 {
-    public name : string;
-    public model : string;
-    public trademark : string;
-    public sdSize : string;
-    public color : string;
-    public is5G : boolean;
-    public cameraNumber : number;
-    public price : number;
+    private name : string;
+    private model : string;
+    private trademark : string;
+    private sdSize : number;
+    private color : string;
+    private is5G : boolean;
+    private cameraNumber : number;
+    private price : number;
 
     constructor(name, model, trademark, sdSize,color, is5G, cameraNumber, price)
     {
@@ -19,6 +19,73 @@ export class Mobile
         this.is5G = is5G;
         this.cameraNumber = cameraNumber;
         this.price = price;
+    }
+    public getname():string
+    {
+        return this.name;
+    }
+    public getmodel():string
+    {
+        return this.model;
+    }
+    public gettrademark():string
+    {return this.trademark;}
+
+    public getsdSize():number
+    {
+        return this.sdSize;
+    }
+    public getcolor():string
+    {
+        return this.color;
+    }
+    public getis5G(): boolean
+    {
+        return this.is5G;
+    }
+    public getcameraNumber():number
+    {
+        return this.cameraNumber;
+    }
+    public getprice():number
+    {
+        return this.price;
+    }
+    public setname(name:string)
+    {
+        this.name = name;
+    }
+    public setmode(model:string)
+    {
+        this.model = model;
+    }
+    public settrademark(trademark:string)
+    {
+        this.trademark = trademark;
+    }
+    public setsdSize(size : number)
+    {
+        this.sdSize = size;
+    }
+    public setcolor (color : string)
+    {
+        this.color = color;
+    }
+    public setis5G (G : boolean)
+    {
+        this.is5G = G;
+    }
+    public setcameraNumber(number : number)
+    {
+        this.cameraNumber = number;
+    }
+    public setprecio(price: number)
+    {
+        this.price = price;
+    }
+    public tostring():string
+    {
+        return "The characteristics of the mobile " + this.name +" are :\n Name :"+ this.name + "\n Model :"+ this.model+ "\n Trademark :"+ this.trademark+ "\n SD size :"+ this.sdSize + "\n Color :"+ this.color+ "\n 5G :"+ this.is5G+ "\n Camera Number :"+ this.cameraNumber+ "\n Price :"+ this.price
     }
 
 }
