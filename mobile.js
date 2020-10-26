@@ -59,7 +59,9 @@ var Mobile = /** @class */ (function () {
         this.price = price;
     };
     Mobile.prototype.tostring = function () {
-        return "The characteristics of the mobile " + this.name + " are :\n Name :" + this.name + "\n Model :" + this.model + "\n Trademark :" + this.trademark + "\n SD size :" + this.sdSize + "\n Color :" + this.color + "\n 5G :" + this.is5G + "\n Camera Number :" + this.cameraNumber + "\n Price :" + this.price;
+        var prof = '';
+        prof = "The characteristics of the " + this.name + " are :\n                Name :" + this.name + "\n                Model :" + this.model + "                \n                Trademark :" + this.trademark + "\n                SD Size :" + this.sdSize + "\n                Color :" + this.color + "\n                5G :" + this.is5G + "\n                Number of Cameras :" + this.cameraNumber;
+        return prof;
     };
     return Mobile;
 }());

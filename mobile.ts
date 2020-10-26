@@ -85,7 +85,16 @@ export class Mobile
     }
     public tostring():string
     {
-        return "The characteristics of the mobile " + this.name +" are :\n Name :"+ this.name + "\n Model :"+ this.model+ "\n Trademark :"+ this.trademark+ "\n SD size :"+ this.sdSize + "\n Color :"+ this.color+ "\n 5G :"+ this.is5G+ "\n Camera Number :"+ this.cameraNumber+ "\n Price :"+ this.price
+        let prof: string = '';
+        prof  =`The characteristics of the ${this.name} are :
+                Name :${this.name}
+                Model :${this.model}                
+                Trademark :${this.trademark}
+                SD Size :${this.sdSize}
+                Color :${this.color}
+                5G :${this.is5G}
+                Number of Cameras :${this.cameraNumber}`
+        return prof;
     }
 
 }
